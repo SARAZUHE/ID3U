@@ -16,7 +16,7 @@ import java.util.Enumeration;
 public class ManagerDataSetU {
     
        //Retorna el elemento de mayor frecuencia en el atributo A   
-    public static String majorityElement(String dataSet [][], int A){
+    public static String majorityElement(String dataSet [][], Integer A){
         
         ArrayList enumValue = enumerateValues(dataSet, A); 
         int size = enumValue.size();
@@ -52,7 +52,7 @@ public class ManagerDataSetU {
     }    
     
     //CALCULA CUANTAS VECES ESTÁ EL VALOR value EN EL ATRIBUTO A VERIFICADOooooo
-    public static double ocurrence(String dataSet [][], String value, int A){        
+    public static double ocurrence(String dataSet [][], String value, Integer A){        
         double occ = 0;        
         for(int i=1; i<dataSet.length; i++){
             if(dataSet[i][A].equals(value))
@@ -62,7 +62,7 @@ public class ManagerDataSetU {
     }
     
     //Coloca en un arreglo los nucléotidos presentes en un atributo VERIFICADOoooo
-    public static ArrayList enumerateValues(String dataSet [][], int A){        
+    public static ArrayList enumerateValues(String dataSet [][], Integer A){        
         ArrayList <String>enumerateValues = new ArrayList<>();
         for(int i=1; i<dataSet.length; i++){
             if(!enumerateValues.contains(dataSet[i][A])){
@@ -73,7 +73,7 @@ public class ManagerDataSetU {
     }  
     
     //Elimina el atributo A y devuelve un dataSet sin ese atributo VERIFICADO
-     public static String [][] remove (String [][] dataSet, int A){
+     public static String [][] remove (String [][] dataSet, Integer A){
         
         int numberAttributes = dataSet[1].length;
         int numberInstances = dataSet.length;

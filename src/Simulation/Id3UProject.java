@@ -76,7 +76,7 @@ public class Id3UProject {
         String readDataSet;
         String [][] dataSet;        
         
-        b = new BufferedReader(new FileReader ("C:\\Users\\SARA\\Documents\\NetBeansProjects\\ID3A\\src\\data\\7_HCVL_"+ option + ".csv")); 
+        b = new BufferedReader(new FileReader ("C:\\Users\\SARA\\Documents\\NetBeansProjects\\ID3U\\src\\data\\7_HCVL_"+ option + ".csv")); 
                 //convierte la base de datos a una cadena para poder pasarla a una matriz
                 readDataSet   = readBuffer(b);
                 

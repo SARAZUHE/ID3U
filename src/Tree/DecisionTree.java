@@ -16,7 +16,7 @@ import javax.swing.tree.MutableTreeNode;
 public class DecisionTree {
 
 	private ArrayList<DecisionTree> childrens;
-	private int attribute;
+	private Integer attribute;
 	private String edge;
 	private String result;
 	private MutableTreeNode node;
@@ -45,7 +45,7 @@ public class DecisionTree {
 	public MutableTreeNode getNode() {
 		return node;
 	}
-	public int getAttribute() {
+	public Integer getAttribute() {
 		return attribute;
 	}
 	public String getEdge() {

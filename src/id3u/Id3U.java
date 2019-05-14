@@ -34,8 +34,10 @@ public class Id3U {
 
         
         int A = Id3U.selectAttribute(dataSet);   
+        System.out.println(A+"antes arbol");
         
         DecisionTree tree = new DecisionTree(A,assegnation);
+        System.out.println("ATRRIBUTO ARBOL:"+tree.getAttribute());
         
         Enumeration values = Collections.enumeration(ManagerDataSetU.enumerateValues(dataSet, A));
         
@@ -66,8 +68,9 @@ public class Id3U {
     }
     
 
-    public static int selectAttribute(String dataSet [][]) throws Exception{
-	int A, ind;
+    public static Integer selectAttribute(String dataSet [][]) throws Exception{
+	Integer ind;
+        Integer A;
         
         double gain, maxGain;
         
@@ -82,9 +85,10 @@ public class Id3U {
             
             if(gain>maxGain){                
                 maxGain = gain;                
-                ind =j;            
-            }           
-        }        
+                ind = Integer.parseInt(dataSet[0][j]);  
+            }          
+        }
+        System.out.println("Atributo: "+ind); 
         return ind;    
 	}
     

@@ -32,7 +32,7 @@ public class ManagerInfoGainU {
         return entropy;
     }
     
-    public static double calc_infoGain(String dataSet [][], int A){
+    public static double calc_infoGain(String dataSet [][], Integer A){
         double infoGain = calc_entropy(dataSet);
         ArrayList<String> enumValues;
         
